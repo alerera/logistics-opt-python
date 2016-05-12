@@ -40,8 +40,14 @@ print 'Nearest Neighbor Results'
 
 print 'How about for all start nodes?'
 for j in G1.nodes():
+   print 'Start node %s' % str(j)
+   nn_cycle = nns.NearNeighCycle(G1, j)
+
+print 'Two-Opt Results'
+for j in G1.nodes():
     print 'Start node %s' % str(j)
-    nn_cycle = nns.NearNeighCycle(G1, j)
+    to_cycle = to.TwoOptCycle(G1, nns.NearNeighCycle(G1, j))
+
 
 #print 'Nearest Insertion Results'
 #ni_cycle = nis.NearInsertionCycle(G1)

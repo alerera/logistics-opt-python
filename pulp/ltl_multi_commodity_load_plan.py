@@ -55,7 +55,6 @@ commods = {	('Ath','CHI'):{'q':0.3},
 		('ATL','CHI'):{'q':1.5},
 		('ATL','DAL'):{'q':2.2},
 		('DAL','CHI'):{'q':1.7}
-			
 }
 
 # Code Section
